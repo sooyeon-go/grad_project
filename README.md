@@ -1,5 +1,6 @@
 # grad_project
-1. 악플 골라내기
+<1. 악플 골라내기>
+
 1.네이버 웹 크롤링(beautifulsoup 도구 이용하여 댓글 크롤링하기
 (선플 예시 : https://entertain.naver.com/ranking/read?oid=311&aid=0001096155, https://entertain.naver.com/ranking/read?oid=008&aid=0004335668,
 https://entertain.naver.com/ranking/read?oid=312&aid=0000429270
@@ -19,10 +20,8 @@ google cloud 감성 api 사용해서 걸러내기
 
 
 
+<2. 선플 만들어내기>
 
-
-
-2. 선플 만들어내기(http://www.datamarket.kr/xe/board_pdzw77/55906 참고)
 1.1-1에서 얻은 선플 샘플 데이터 이용하기
 2.텍스트 전처리 시작
 
