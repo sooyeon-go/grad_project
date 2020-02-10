@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <title>기사 제목과 내용</title>
+        
+        <link rel="stylesheet" htref="{{ {{ url_for('static',filename='css/index_style.css') }}">
+    </head>
+    <body>
+        
+        <div class="naver_content">
+            <h1>기사 내용</h1>
+            <ul>
+                {% for i in list %}
+                    <li>{{i}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+</html>
