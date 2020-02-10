@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title>기사 url 받기</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    </head>
+    <body>
+
+        <h2>기사 url을 넣어주세요</h2>
+
+        {% from "_formhelpers.html" import render_field %}
+
+       <form method=post action="/results">
+           <dl>
+               {{ render_field(form.articleurl, cols='30', rows='10') }}
+           </dl>
+           <div>
+               <input type=submit value='url 입력'name='submit_bin'>
+           </div>
+        </form>
+
+    </body>
+</html>
