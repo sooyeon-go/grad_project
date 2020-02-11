@@ -2,18 +2,17 @@
 <html>
     <head>
         <title>기사 제목과 내용</title>
-        
-        <link rel="stylesheet" htref="{{ {{ url_for('static',filename='css/index_style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
-        
-        <div class="naver_content">
-            <h1>기사 내용</h1>
-            <ul>
-                {% for i in list %}
-                    <li>{{i}}</li>
-                {% endfor %}
-            </ul>
-        </div>
+
+    	<h3>기사 내용:</h3>
+    	<div>{{ content }}</div>
+    	<div id='button'>
+    		<form action="/result">
+    			<input type=submit value='clean 댓글 보기'>
+    		</form>
+    	</div>
+
     </body>
 </html>
