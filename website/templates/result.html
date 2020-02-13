@@ -5,23 +5,30 @@
             <link rel="stylesheet" href="{{ url_for('static', filename='style.css) }}">
     </head>
     <body>
-        
+
         <h3>기사 요약:</h3>
         <ul>
             {% for i in list %}
             <li>{{i}}</li>
             {% endfor %}
         </ul>
-        
+
         <h3>Prediction:</h3>
-        <div>이 댓글창은 ^^^ 적입니다.</div>
-        
+        <div>이 댓글창은 ^^^적입니다</</div>
+
         <h3>Clean 댓글:</h3>
         <ul>
             { % for i in list2 %}
             <li>{{i}}</li>
             {% endfor %}
         </ul>
-        
+
+        <h3>clean 댓글:</h3>
+        <ul>
+		    { % for i in list3 %}
+		    <li>{{i}}</li>
+		    {% endfor %}
+        </ul>
+
     </body>
 </html>
