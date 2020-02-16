@@ -1,8 +1,9 @@
 <!doctype html>
 <html>
     <head>
+    	<meta charset="utf-8">
         <title>기사 요약</title>
-            <link rel="stylesheet" href="{{ url_for('static', filename='style.css) }}">
+            <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
 
@@ -29,6 +30,12 @@
 		    <li>{{i}}</li>
 		    {% endfor %}
         </ul>
+
+		<div id='button'>
+		    <form action="/thanks">
+		    	<input type=submit value='확인'>
+		    </form>
+    	</div>
 
     </body>
 </html>
