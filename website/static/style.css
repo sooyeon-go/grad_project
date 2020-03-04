@@ -1,11 +1,19 @@
 body{
     font-size: 2em;
 }
-
 .naver_content {
 
     padding: 20px;
     border: 10px;
     border-radius: 50px;
 
+}
+#text {
+    font-size: 1.2em;
+    padding: 0.7em 1em 0.7em 1em;
+    background: transparent;
+    color: white;
+}
+.dark {
+    background-color: black;
 }
