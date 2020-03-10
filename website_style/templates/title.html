@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <title>Fixed 1-column layout (basic)</title>
@@ -17,7 +17,9 @@
     <p>기사 크롤링 > 본문 > 댓글 분석 > 결과</p>
   </blockquote>
   <h2>기사 제목:</h2>
+  <div>{{ title }}</div>
   <p>기사 내용: </p>
+  <div>{{ content }}</div>
   <div id='button'>
     		<form action="/result">
     			<input type=submit value='clean 댓글 보기'>
