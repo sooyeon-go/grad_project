@@ -16,23 +16,17 @@
   <blockquote>
     <p>기사 크롤링 > 본문 > 댓글 분석 > 결과</p>
   </blockquote>
-  <h2>기사 요약:</h2>
+  <h2>Prediction:</h2>
+  <p>이 댓글창은 ^^^적입니다</p>
+  <h2>Clean 댓글:</h2>
   <ul>
     {% for i in list %}
     <li>{{i}}</li>
     {% endfor %}
   </ul>
-  <h2>Prediction:</h2>
-  <p>이 댓글창은 ^^^적입니다</p>
-  <h2>Clean 댓글:</h2>
-  <ul>
-    {% for i in list2 %}
-    <li>{{i}}</li>
-    {% endfor %}
-  </ul>
   <h3>clean 댓글:</h3>
   <ul>
-  {% for i in list3 %}
+  {% for i in list2 %}
   <li>{{i}}</li>
   {% endfor %}
   </ul>
