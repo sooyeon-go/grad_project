@@ -5,14 +5,20 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
-        
-        <h3>이용해 주셔서 감사합니다.</h3>
-        
+        <h2>훈련 완료 안내 창</h2>
+		<ul>
+			{% for i in list %}
+		    <li>{{i}}</li>
+		    {% endfor %}
+  		</ul>
+
+        <h3>훈련이 완료 되었습니다. 이용해 주셔서 감사합니다.</h3>
+
         <div id='button'>
             <form action="/">
                 <input type=submit value='다른 기사 clean 댓글 보러가기'>
             </form>
         </div>
-        
+
     </body>
 </html>
