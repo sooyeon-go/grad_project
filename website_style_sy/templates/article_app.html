@@ -18,11 +18,13 @@
     <p><b>기사 크롤링</b> > 본문 > 댓글 분석 > 결과</p>
   </blockquote>
   <h2>기사 url을 넣어주세요</h2>
+  <br>
   {% from "_formhelpers.html" import render_field %}
   <form method=post action="/title">
 	<dl>
 		{{ render_field(form.articleurl, cols='50', rows='10') }}
 	</dl>
+	<br>
 	<div>
 		<input type=submit value='url 입력' name='submit_btn'>
 	</div>
