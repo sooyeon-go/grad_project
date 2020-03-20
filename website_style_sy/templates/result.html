@@ -23,6 +23,7 @@
   <div>이 댓글창은
         	<strong>{{ list4 }}</strong>% 긍정적입니다</div>
 
+  <br>
   <h2>Clean 댓글:</h2>
   <ul>
     {% for i in list2 %}
@@ -31,12 +32,13 @@
   </ul>
 
   <center>
+  <br>
   <div id='button'>
     <form action="/thanks">
       <input type=submit value='댓글 훈련 시키기'>
     </form>
   </div>
-
+  <br>
   <div id='button'>
       <form action="/no_train">
         <input type=submit value='댓글 훈련 시키지 않기'>
