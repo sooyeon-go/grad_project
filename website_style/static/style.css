@@ -11,7 +11,7 @@ height:100%;
 background-color:#5b9bd5;
 color:#000000;  
 text-align:center;
-font-family:Arial, Helvetica, sans-serif;
+font-family: "Nanum square", Arial, Helvetica, sans-serif;
 font-size:16px;
 }
 
@@ -145,9 +145,10 @@ border-top:1px solid #cccccc;
 
 #button {
     border: 2px;
-    border-radius: 50%;
+    border-radius: .1em;
     color: #ffffff;
     margin: 4px 2px;
+    padding:1px 4px;
 }
 
 
