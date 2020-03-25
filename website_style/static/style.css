@@ -27,14 +27,16 @@ text-decoration:none;
 
 p {
 margin:6px 0;
+border:1px solid #cccccc;
+border-radius: 10%;
 }
 
 blockquote {
 margin:16px;
 padding:8px;
-background-color:#eeeeee;
-border-top:1px solid #cccccc;
-border-bottom:1px solid #cccccc;
+/*background-color:#eeeeee;*/
+border:1px solid #cccccc;
+border-radius: 10%;
 }
 
 blockquote p {
@@ -73,6 +75,8 @@ padding:0 0 0 0;
 height:160px;
 background-color:#ffffff;
 border:1px solid #cccccc;
+text-align:center;
+vertical-align: middle;
 }
 
 #header h1 {
