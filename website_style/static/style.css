@@ -11,7 +11,8 @@ height:100%;
 background-color:#5b9bd5;
 color:#000000;  
 text-align:center;
-font-family: "Nanum square", Arial, Helvetica, sans-serif;
+vertical-align: middle;
+font-family: "NanumSquare_acR", Arial, Helvetica, sans-serif;
 font-size:16px;
 }
 
@@ -35,7 +36,7 @@ margin:16px;
 padding:8px;
 /*background-color:#eeeeee;*/
 border:1px solid #cccccc;
-border-radius: 50%;
+border-radius: .5em;
 }
 
 blockquote p {
@@ -74,6 +75,7 @@ padding:0 0 0 0;
 height:160px;
 background-color:#ffffff;
 border:1px solid #cccccc;
+line-height: normal;
 text-align:center;
 vertical-align: middle;
 }
@@ -85,6 +87,7 @@ font-size:1.7em;
 letter-spacing:.1em;
 text-align:center;
 vertical-align: middle;
+font-style: bold;
 }
 
 #header h2 {
