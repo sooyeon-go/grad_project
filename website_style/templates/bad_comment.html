@@ -8,31 +8,38 @@
 </head>
 <body>
 <div id="title">
-  <center>
   <div id="header">
     <h1>플젝 최종 제목</h1>
     <h2>화학과 1510000 고수연, 1613362 김영빈</h2>
   </div>
+  <center>
   <!--//end #headern//-->
   <blockquote>
-    <p><b>기사 크롤링</b> > 본문 > 댓글 분석 > 결과</p>
+    <p>기사 크롤링 > 본문 > <b>댓글 분석</b> > 결과</p>
   </blockquote>
-  <h2>기사 url을 넣어주세요</h2>
+  </center>
+
   <br>
-  {% from "_formhelpers.html" import render_field %}
-  <form method=post action="/title">
-	<dl>
-		{{ render_field(form.articleurl, cols='50', rows='10') }}
-	</dl>
-	<br>
-	<div>
-		<input type=submit value='url 입력' name='submit_btn'>
-	</div>
-  </form>
+  <h2>악플:</h2>
+  <ul>
+    {% for i in list1 %}
+    <li>{{i}}</li>
+    {% endfor %}
+  </ul>
+
+  <center>
+  <br>
+  <div id='button'>
+    <form action="/result">
+      <input type=submit value='돌아가기'>
+    </form>
+  </div>
+  <br>
+  </center>
+
   <div id="footer"> <a target="_blank" href="http://validator.w3.org/" title="W3C HTML Validation">XHTML</a> | <a target="_blank" href="http://jigsaw.w3.org/css-validator/validator-uri.html" title="W3C CSS Validation">CSS</a> | <a target="_blank" href="http://www.w3.org/TR/WCAG10/" title="Web Content Accessibility Guidelines">WCAG</a> | <a target="_blank" rel="nofollow" href="http://www.csstinderbox.com">The CSS Tinderbox</a>
   </div>
   <!--//end #footer//-->
-  </center>
 </div>
 <!--//end #title//-->
 </body>
