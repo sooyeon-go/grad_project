@@ -22,13 +22,24 @@
   {% from "_formhelpers.html" import render_field %}
   <form method=post action="/title">
 	<dl>
-		{{ render_field(form.articleurl, cols='50', rows='10') }}
+		{{ render_field(form.articleurl, cols='50', rows='1') }}
 	</dl>
 	<br>
 	<div>
 		<input type=submit value='url 입력' name='submit_btn'>
 	</div>
   </form>
+  <script>
+    let site_select = document.getElementById('site');
+
+    site_select.onchange = function() {
+      site = site_select.value;
+
+      fetch('/link/' + site).then(function(response) {
+        response.text.
+      });
+    }
+  </script>
   <div id="footer"> <a target="_blank" href="http://validator.w3.org/" title="W3C HTML Validation">XHTML</a> | <a target="_blank" href="http://jigsaw.w3.org/css-validator/validator-uri.html" title="W3C CSS Validation">CSS</a> | <a target="_blank" href="http://www.w3.org/TR/WCAG10/" title="Web Content Accessibility Guidelines">WCAG</a> | <a target="_blank" rel="nofollow" href="http://www.csstinderbox.com">The CSS Tinderbox</a>
   </div>
   <!--//end #footer//-->
