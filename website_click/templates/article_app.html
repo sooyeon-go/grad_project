@@ -5,7 +5,6 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}" media="screen" />
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" media="screen" />
-<script></script>
 </head>
 <body>
 <div id="title">
@@ -25,25 +24,25 @@
     <button id="naverbtn" type="button"><img src="naver.png" alt="네이버 로고"/></button>
     <button id="daumbtn" type="button"><img src="daum.png" alt="다음 로고"/></button>
     <div style="top:-110px;">
-      <iframe id="nate" src="https://news.nate.com/rank/interest" >네이트 연예 기사</iframe>
+      <iframe id="nate" src="https://news.nate.com/rank/interest"  scrolling="auto">네이트 연예 기사</iframe>
       <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-      <script>
+      <script text="text/javascript">
         $("#natebtn").click(function() {
           $("#naver").hide();
           $("#daum").hide();
           $("#nate").show();
         });
       </script>
-      <iframe id="naver" src="https://entertain.naver.com/">네이버 연예 기사</iframe>  
-      <script>
+      <iframe id="naver" src="https://entertain.naver.com/"  scrolling="auto">네이버 연예 기사</iframe>  
+      <script text="text/javascript">
         $("#naverbtn").click(function() {
           $("#nate").hide();
           $("#daum").hide();
           $("#naver").show();
         });
       </script>
-      <iframe id="daum" src="https://media.daum.net/entertain/ranking/popular" style="transform:scale(0.9); transform-origin:25% 0; width:740px; height:555px;">다음 연예 기사</iframe>
-      <script>
+      <iframe id="daum" src="https://media.daum.net/entertain/ranking/popular"  scrolling="auto" style="transform:scale(0.9); transform-origin:25% 0; width:740px; height:555px;">다음 연예 기사</iframe>
+      <script text="text/javascript">
         $("#daumbtn").click(function() {
           $("#nate").hide();
           $("#naver").hide();
@@ -51,9 +50,25 @@
         });
       </script>
     </div>
+    <br>
     <div>
-      <button type=button value='기사 선택' name='submit_btn' onclick=""></button>
+      <button type=button value='기사 선택' name='submit_btn' onclick="sitelink"></button>
     </div>
+    <script text="text/javascript">
+      function sitelink(){
+        if ($("#natebtn").is(":visible")) {
+          opener.document.getElementById("#nate")
+        }
+        else if ($("#naverbtn").is(":visible")) {
+          alert("곧 지원할 예정입니다.");
+          //opener.document.getElementById("#naver")
+        }
+        else if ($("#daumbtn").is(":visible")) {
+          alert("아직 지원하지 않습니다.");
+          //opener.document.getElementById("#daum")
+        }
+      }
+    </script>
   </div>
   <div id="footer"> <a target="_blank" href="http://validator.w3.org/" title="W3C HTML Validation">XHTML</a> | <a target="_blank" href="http://jigsaw.w3.org/css-validator/validator-uri.html" title="W3C CSS Validation">CSS</a> | <a target="_blank" href="http://www.w3.org/TR/WCAG10/" title="Web Content Accessibility Guidelines">WCAG</a> | <a target="_blank" rel="nofollow" href="http://www.csstinderbox.com">The CSS Tinderbox</a>
   </div>
