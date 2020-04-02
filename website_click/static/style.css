@@ -53,12 +53,12 @@ list-style-type:disc;
 }
 
 iframe {
-    width:650px;
+    width:670px;
     height:500px;
     display: none;
     overflow-x: hidden;
     overflow-y: auto;
-    
+    text-align: center;
 }
 
 #title { 	
