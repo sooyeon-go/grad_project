@@ -56,19 +56,23 @@
     </div>
     <script text="text/javascript">
       function sitelink(){
-        printf("AC");
-        var link = "";
-        if ($("#nate").is(":visible")) {
-          link = document.getElementById("#nate").src;
-          printf("A");
+        //print("AC");
+        var link;
+        var potato = document.getElementById('#nate');
+        var pineapple = document.getElementById('#naver');
+        var tomato = document.getElementById('#daum');
+        if (isElementVisible(potato)) {
+          link = jQuery('#nate').attr("src");;
+          printf(link);
+          print("AC")
         }
-        else if ($("#naver").is(":visible")) {
+        else if (isElementVisible(pineapple)) {
           alert("곧 지원할 예정입니다.");
-          //opener.document.getElementById("#naver")
+          //document.getElementById("#naver")
         }
-        else if ($("#daum").is(":visible")) {
+        else if (isElementVisible(tomato)) {
           alert("아직 지원하지 않습니다.");
-          //opener.document.getElementById("#daum")
+          //document.getElementById("#daum")
         }
         return link;
       }
