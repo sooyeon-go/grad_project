@@ -30,17 +30,6 @@
 	</div>
   </form>
   /*아아 여기 이상해요 손님*/
-  <script>
-    let site_select = document.getElementById('site');
-
-    site_select.onchange = function() {
-      site = site_select.value;
-
-      fetch('/link/' + site).then(function(response) {
-        response.text
-      });
-    }
-  </script>
   <div id="footer"> <a target="_blank" href="http://validator.w3.org/" title="W3C HTML Validation">XHTML</a> | <a target="_blank" href="http://jigsaw.w3.org/css-validator/validator-uri.html" title="W3C CSS Validation">CSS</a> | <a target="_blank" href="http://www.w3.org/TR/WCAG10/" title="Web Content Accessibility Guidelines">WCAG</a> | <a target="_blank" rel="nofollow" href="http://www.csstinderbox.com">The CSS Tinderbox</a>
   </div>
   <!--//end #footer//-->

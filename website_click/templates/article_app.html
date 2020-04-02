@@ -52,21 +52,25 @@
     </div>
     <br>
     <div>
-      <button type=button value='기사 선택' name='submit_btn' onclick="sitelink"></button>
+      <button type=button onclick="javascript:sitelink()">기사 선택</button>
     </div>
     <script text="text/javascript">
       function sitelink(){
-        if ($("#natebtn").is(":visible")) {
-          opener.document.getElementById("#nate")
+        printf("AC");
+        var link = "";
+        if ($("#nate").is(":visible")) {
+          link = document.getElementById("#nate").src;
+          printf("A");
         }
-        else if ($("#naverbtn").is(":visible")) {
+        else if ($("#naver").is(":visible")) {
           alert("곧 지원할 예정입니다.");
           //opener.document.getElementById("#naver")
         }
-        else if ($("#daumbtn").is(":visible")) {
+        else if ($("#daum").is(":visible")) {
           alert("아직 지원하지 않습니다.");
           //opener.document.getElementById("#daum")
         }
+        return link;
       }
     </script>
   </div>
