@@ -51,30 +51,43 @@
       </script>
     </div>
     <br>
-    <div>
-      <button type=button onclick="javascript:sitelink()">기사 선택</button>
-    </div>
+    <form method=post action="/title">
+      <input type="hidden" name="link" value="아무거나">
+      <input type="submit" value="기사 선택" onclick="getlink()">
+    </form>
     <script text="text/javascript">
-      function sitelink(){
-        //print("AC");
-        var link;
-        var potato = document.getElementById('#nate');
-        var pineapple = document.getElementById('#naver');
-        var tomato = document.getElementById('#daum');
-        if (isElementVisible(potato)) {
-          link = jQuery('#nate').attr("src");;
-          printf(link);
-          print("AC")
+      function getlink(){
+        function sitelink() {3
+          var link;
+          alert(document.getElementById('#nate').contentDocument.location.href)
+          if ($("#nate").is(":visible")) {
+            //window.postMessage(window.location,'*');
+            link = document.getElementById('#nate').contentDocument.location.href;
+            alert("되나?");
+          }
+          else if ($("#naver").is(":visible")) {
+            //document.getElementById("#naver").src;
+          }
+          else if ($("#daum").is(":visible")) {
+            //document.getElementById("#daum");
+          }
+          return link;
         }
-        else if (isElementVisible(pineapple)) {
-          alert("곧 지원할 예정입니다.");
-          //document.getElementById("#naver")
+        document.getElementById('link').value = sitelink();
+        alert(document.getElementById('link').value);
+        /*if ($("#nate").is(":visible")) {
+          return true;
         }
-        else if (isElementVisible(tomato)) {
-          alert("아직 지원하지 않습니다.");
+        else if ($("#naver").is(":visible")) {
+          alert("기사에서 댓글 기능이 아직 지원되지 않습니다.");
+          //document.getElementById("#naver").src
+          return false;
+        }
+        else if ($("#daum").is(":visible")) {
+          alert("기사에서 댓글 기능을 지원하지 않습니다.");
           //document.getElementById("#daum")
-        }
-        return link;
+          return false;
+        }*/
       }
     </script>
   </div>
