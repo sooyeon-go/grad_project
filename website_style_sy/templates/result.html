@@ -21,12 +21,14 @@
 
   <h2>Prediction:</h2>
   <div>이 댓글창은
-        	<strong>{{ list4 }}</strong>% 긍정적입니다</div>
+        	<strong>{{ list2 }}</strong>% 긍정적입니다</div>
 
   <br>
   <h2>Clean 댓글:</h2>
   <ul>
-    {% for i in list2 %}
+    {% for i in list1 %}
+    <li>{{i}}</li>
+    {% for i in list3 %}
     <li>{{i}}</li>
     {% endfor %}
   </ul>
