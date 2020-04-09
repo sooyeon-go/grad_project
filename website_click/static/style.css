@@ -56,6 +56,15 @@ div {
     line-height: 160%;
 }
 
+button {
+    color: #000000;
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    font-family: "Nanum Gothic", Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
 button:hover {
     color: #ffffff;
     background-color: #000000;

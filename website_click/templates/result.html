@@ -1,16 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title>GRAD_PROJECT</title>
+<title>Fixed 1-column layout (basic)</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}" media="screen" />
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" media="screen" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jua">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum Gothic">
 </head>
 <body>
 <div id="title">
   <div id="header">
-    <h1>site title</h1>
-    <h2>fixed 1-column layout (basic)</h2>
+    <h1>플젝 최종 제목</h1>
+    <h2>화학과 1510000 고수연, 1613362 김영빈</h2>
   </div>
   <center>
   <!--//end #headern//-->
@@ -21,25 +23,38 @@
 
   <h2>Prediction:</h2>
   <div>이 댓글창은
-        	<strong>{{ list4 }}</strong>% 긍정적입니다</div>
+        	<strong>{{ list2 }}</strong>% 긍정적입니다</div>
 
-  <h2>Clean 댓글:</h2>
+  <br>
+  <h2>Clean 댓글:<br></h2>
   <ul>
-    {% for i in list2 %}
-    <li>{{i}}</li>
-    {% endfor %}
+      {% for i in list1 %}
+      <li>{{i}}</li>
+      {% endfor %}
+  </ul>
+  <ul>
+      {% for k in list3 %}
+      <li>{{k}}</li>
+      {% endfor %}
   </ul>
 
   <center>
+  <br>
   <div id='button'>
     <form action="/thanks">
       <input type=submit value='댓글 훈련 시키기'>
     </form>
   </div>
-
+  <br>
   <div id='button'>
       <form action="/no_train">
         <input type=submit value='댓글 훈련 시키지 않기'>
+      </form>
+  </div>
+  <br>
+  <div id='button'>
+      <form action="/bad_comment">
+        <input type=submit value='악플 보러가기'>
       </form>
   </div>
   </center>
