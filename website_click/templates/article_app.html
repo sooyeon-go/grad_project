@@ -5,12 +5,15 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}" media="screen" />
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" media="screen" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jua">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum Gothic">
 </head>
 <body>
 <div id="title">
   <center>
   <div id="header">
-    <h1>플젝 최종 제목</h1>
+    <h1>
+      플젝 최종 제목</h1>
     <h2>화학과 1512136 고수연, 1613362 김영빈</h2>
   </div>
   <!--//end #headern//-->
@@ -21,6 +24,7 @@
   <br>
   <div>
     <button id="natebtn" type="button"><img src="nate.png" alt="네이트 로고"/></button>
+    <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
     <script text="text/javascript">
       $("#natebtn").click(function() {
         $("#naver").hide();
@@ -44,45 +48,29 @@
         $("#daum").show();
       });
     </script>
-    <div id="nate">
+    <div id="nate" style="display: none;">
       <form method=post action="/title">
-        <button id="nate_1" value = {{link[0]}}>{{title[0]}}</button>
-        <br>
-        <button id="nate_2" value = {{link[1]}}>{{title[1]}}</button>
-        <br>
-        <button id="nate_3" value = {{link[2]}}>{{title[2]}}</button>
-        <br>
-        <button id="nate_4" value = {{link[3]}}>{{title[3]}}</button>
-        <br>
-        <button id="nate_5" value = {{link[4]}}>{{title[4]}}</button>
+        <button name="nate_news" value = {{link[0]}}>{{title[0]}}</button>
+        <br><br>
+        <button name="nate_news" value = {{link[1]}}>{{title[1]}}</button>
+        <br><br>
+        <button name="nate_news" value = {{link[2]}}>{{title[2]}}</button>
+        <br><br>
+        <button name="nate_news" value = {{link[3]}}>{{title[3]}}</button>
+        <br><br>
+        <button name="nate_news" value = {{link[4]}}>{{title[4]}}</button>
       </form>
     </div>
     <br>
-    <div id="naver">
+    <div id="naver" style="display: none;">
+      해당 사이트는 현재 댓글 기능을 지원하지 않습니다.
       <form method=post action="/title">
-        <button id="naver_1">{{title[0]}}</button>
-        <br>
-        <button id="naver_2">{{title[1]}}</button>
-        <br>
-        <button id="naver_3">{{title[2]}}</button>
-        <br>
-        <button id="naver_4">{{title[3]}}</button>
-        <br>
-        <button id="naver_5">{{title[4]}}</button>
       </form>
     </div>
     <br>
-    <div id="daum">
+    <div id="daum" style="display: none;">
+      해당 사이트는 현재 댓글 기능을 지원하지 않습니다.
       <form method=post action="/title">
-        <button id="daum_1">{{title[0]}}</button>
-        <br>
-        <button id="daum_2">{{title[1]}}</button>
-        <br>
-        <button id="daum_3">{{title[2]}}</button>
-        <br>
-        <button id="daum_4">{{title[3]}}</button>
-        <br>
-        <button id="daum_5">{{title[4]}}</button>
       </form>
     </div>
   </div>
