@@ -24,13 +24,16 @@
         	<strong>{{ list2 }}</strong>% 긍정적입니다</div>
 
   <br>
-  <h2>Clean 댓글:</h2>
+  <h2>Clean 댓글:<br></h2>
   <ul>
-    {% for i in list1 %}
-    <li>{{i}}</li>
-    {% for i in list3 %}
-    <li>{{i}}</li>
-    {% endfor %}
+      {% for i in list1 %}
+      <li>{{i}}</li>
+      {% endfor %}
+  </ul>
+  <ul>
+      {% for k in list3 %}
+      <li>{{k}}</li>
+      {% endfor %}
   </ul>
 
   <center>
