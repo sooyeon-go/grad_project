@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Fixed 1-column layout (basic)</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}" media="screen" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" media="screen" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jua">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum Gothic">
+</head>
+<body>
+<div id="title">
+  <div id="header">
+    <h1>플젝 최종 제목</h1>
+    <h2>화학과 1510000 고수연, 1613362 김영빈</h2>
+  </div>
+  <center>
+  <!--//end #headern//-->
+  <blockquote>
+    <p>기사 크롤링 > 본문 > <b>댓글 분석</b> > 결과</p>
+  </blockquote>
+  </center>
+
+  <h2>Prediction:</h2>
+  <div>이 댓글창은
+        	<strong>{{ list2 }}</strong>% 긍정적입니다</div>
+
+  <br>
+  <h2>Clean 댓글:<br></h2>
+  <ul>
+      {% for i in list1 %}
+      <li>{{i}}</li>
+      {% endfor %}
+  </ul>
+  <span style = "color : red;">
+  <ul>
+      {% for k in list3 %}
+      <li>{{k}}</li>
+      {% endfor %}
+  </ul>
+  </span>
+
+  <center>
+  <br>
+  <div id='button'>
+    <form action="/thanks">
+      <input type=submit value='댓글 훈련 시키기'>
+    </form>
+  </div>
+  <br>
+  <div id='button'>
+      <form action="/no_train">
+        <input type=submit value='댓글 훈련 시키지 않기'>
+      </form>
+  </div>
+  <br>
+  <div id='button'>
+      <form action="/bad_comment">
+        <input type=submit value='악플 보러가기'>
+      </form>
+  </div>
+  </center>
+
+  <div id="footer"> <a target="_blank" href="http://validator.w3.org/" title="W3C HTML Validation">XHTML</a> | <a target="_blank" href="http://jigsaw.w3.org/css-validator/validator-uri.html" title="W3C CSS Validation">CSS</a> | <a target="_blank" href="http://www.w3.org/TR/WCAG10/" title="Web Content Accessibility Guidelines">WCAG</a> | <a target="_blank" rel="nofollow" href="http://www.csstinderbox.com">The CSS Tinderbox</a>
+  </div>
+  <!--//end #footer//-->
+</div>
+<!--//end #title//-->
+</body>
+</html>
