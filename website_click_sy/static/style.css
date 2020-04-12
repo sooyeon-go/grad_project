@@ -1,0 +1,198 @@
+/*******************************************************
+TITLE: Fixed One-Column Layout (Basic) V1.1
+DATE: 20070824
+AUTHOR: The CSS Tinderbox - http://www.csstinderbox.com
+*******************************************************/
+
+body {
+margin:.5em;
+padding:0;
+height:100%;
+background-color:#5b9bd5;
+color:#000000;  
+text-align:center;
+vertical-align: middle;
+font-family: "Nanum Gothic", Arial, Helvetica, sans-serif;
+font-size:16px;
+}
+
+a {
+color:#cc0000;
+text-decoration:underline;
+}
+
+a:hover {
+color:#cccccc;
+text-decoration:none;
+}
+
+p {
+margin:6px 0;
+/*border:1px solid #cccccc;*/
+}
+
+blockquote {
+margin:16px;
+padding:8px;
+/*background-color:#eeeeee;*/
+border:1px solid #cccccc;
+border-radius: .5em;
+}
+
+blockquote p {
+margin:.2em;
+}
+
+ul {
+list-style-type:disc;
+}
+
+li {
+margin:0 0 0 25px;
+list-style-type:disc;
+}
+
+div {
+    line-height: 160%;
+}
+
+button {
+    color: #000000;
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    font-family: "Nanum Gothic", Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+#title { 	
+margin:0 auto;
+padding:1em;
+width:700px;
+text-align:left;
+vertical-align: middle;	
+background-color:#ffffff;
+border:1px solid #cccccc;
+}
+
+#title h2 {
+margin:0 0 0 0;
+padding:6px 0;
+font-size:1.2em;
+letter-spacing:.1em;
+
+}
+
+#header {
+margin:0 0 0 0;
+padding:0 0 0 0;
+height:160px;
+background-color:#ffffff;
+border:1px solid #cccccc;
+line-height: normal;
+text-align:center;
+vertical-align: middle;
+}
+
+#header h1 {
+margin:0 0 -8px 0;
+padding:16px 0 0 24px;
+font-size:1.7em;
+letter-spacing:.1em;
+text-align:center;
+vertical-align: middle;
+font-style: bold;
+font-family: "Jua", Arial, Helvetica, sans-serif;
+}
+
+#header h2 {
+margin:0 0 0 0;
+padding:16px 0 0 24px;
+font-size:.9em;
+font-weight:lighter;
+letter-spacing:.1em;
+text-align:center;
+vertical-align: middle;
+}
+
+#nav ul {
+margin:0;
+list-style:none;
+}
+
+#nav li {
+margin:0 0 8px 0;
+list-style:none;
+}
+
+#nav li a {
+text-decoration:underline;
+}
+
+#nav li a:hover{
+text-decoration:none;
+}
+
+#footer {
+position:relative;
+bottom:0;
+margin:80px 0 0 0;
+padding:0;
+height:64px;
+line-height:64px;
+text-align:center;
+font-size:.7em;
+background-color:#ffffff;
+border-top:1px solid #cccccc;
+}
+
+#nate {
+    color: #000000;
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    font-size:16px;
+    font-family: "Nanum Gothic", Arial, Helvetica, sans-serif;
+    text-align: left;
+    }
+
+#naver {
+    color: #000000;
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    font-size:16px;
+    text-align: left;
+    cursor: default;
+    font-family: "Nanum Gothic", Arial, Helvetica, sans-serif;
+    }
+
+#daum {
+    color: #000000;
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    font-size:16px;
+    text-align: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-user-select: none;
+    cursor: default;
+    font-family: "Nanum Gothic", Arial, Helvetica, sans-serif;
+    }
+
+
+
+
+
+
+
+
+
+
