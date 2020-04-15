@@ -13,39 +13,18 @@
 <div id="title">
   <center>
   <div id="header">
-    <h1>
-      EUTOPIA</h1>
+    <h1><br>EUTOPIA</h1>
     <h2>화학과 1512136 고수연, 1613362 김영빈</h2>
   </div>
   <!--//end #headern//-->
   <blockquote>
     <p>기사 크롤링 > <b>본문</b> > 댓글 분석 > 결과</p>
   </blockquote>
-  <div id='iframe'>
-    <iframe src="{{url}}">{{title}} 기사 전문</iframe>
-    <script>
-      alert(document.getElementById("articleView").
-            contentWindow.document.body.offsetHeight );
-    </script>
+  <div>
+    <div id='iframe'>
+      <iframe src="{{url}}">{{title}} 기사 전문</iframe>
+    </div>
   </div>
-  <!--<script type="text/javascript"> 
-    //<![CDATA[
-    function calcHeight(){
-     //find the height of the internal page
-    
-     var the_height=
-     document.getElementById('the_iframe').contentWindow.
-     document.body.scrollHeight;
-    
-     //change the height of the iframe
-     document.getElementById('the_iframe').height=
-     the_height;
-    
-     //document.getElementById('the_iframe').scrolling = "no";
-     document.getElementById('the_iframe').style.overflow = "hidden";
-    }
-    //
-  </script>-->
   <br>
   <div id='button'>
     		<form action="/result">

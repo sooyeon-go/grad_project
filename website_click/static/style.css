@@ -74,10 +74,11 @@ button:hover {
 iframe {
     background-color: #ffffff;
     border: none;
-    height: fit-content;
+    height: 1000px;
     width: 650px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    position:relative;
+    top:-230px; 
+    left:0px;
 }
 
 #title { 	
@@ -198,9 +199,10 @@ border-top:1px solid #cccccc;
     }
 
 #iframe {
-    height: fit-content;
-    width: 650px;
     border: none;
+    
+    height: 1000px;
+    width: 650px;
 }
 
 
