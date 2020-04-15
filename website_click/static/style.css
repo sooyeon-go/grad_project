@@ -34,9 +34,8 @@ margin:6px 0;
 blockquote {
 margin:16px;
 padding:8px;
-/*background-color:#eeeeee;*/
-border:1px solid #cccccc;
-border-radius: .5em;
+background-color:#eeeeee;
+border:none;
 }
 
 blockquote p {
@@ -205,6 +204,18 @@ border-top:1px solid #cccccc;
     height: 1000px;
     width: 650px;
     overflow:hidden;
+}
+
+#pptlike {
+    background-color: #eeeeee;
+    border:1.5px solid #000000;
+    border-top-left-radius: .7em;
+    border-top-right-radius: .7em;
+}
+
+#pptlike2 {
+    background-color: #ffffff;
+    border-top:1.5px solid #000000;
 }
 
 
