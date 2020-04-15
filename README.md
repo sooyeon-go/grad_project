@@ -1,11 +1,12 @@
 # 졸업 작품 EUTOPIA
 
 ##개요
-![image](https://user-images.githubusercontent.com/58035397/79320321-9e62cc00-7f44-11ea-8052-612b8898c0ff.png)
 
+![image](https://user-images.githubusercontent.com/58035397/79320321-9e62cc00-7f44-11ea-8052-612b8898c0ff.png)
 ![image](https://user-images.githubusercontent.com/58035397/79320280-8b4ffc00-7f44-11ea-8cff-b91886a2363f.png)
 
 ##시현 캡처
+
 <img width="600" alt="1" src="https://user-images.githubusercontent.com/58035397/79320723-39f43c80-7f45-11ea-8400-2fb9af41cbd0.PNG">
 <img width="601" alt="2" src="https://user-images.githubusercontent.com/58035397/79321096-cf8fcc00-7f45-11ea-98fa-662d864bccf6.PNG">
 <img width="601" alt="3" src="https://user-images.githubusercontent.com/58035397/79321104-d1f22600-7f45-11ea-9dfb-2448ec6ddee4.PNG">
