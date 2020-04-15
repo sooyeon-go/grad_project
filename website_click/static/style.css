@@ -32,10 +32,11 @@ margin:6px 0;
 }
 
 blockquote {
-margin:16px;
-padding:8px;
-background-color:#eeeeee;
-border:none;
+margin:8px;
+padding:2px;
+background-color:#ffffff;
+border:1.5px solid #000000;
+border-radius: 1.2em;
 }
 
 blockquote p {
@@ -66,8 +67,15 @@ button {
 }
 
 button:hover {
-    color: #ffffff;
-    background-color: #000000;
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+input {
+    background-color: #ffffff;
+    border: 1.5px solid #000000;
+    border-radius: 0.3em;
+    box-shadow: 3px 3px black ;
 }
 
 iframe {
