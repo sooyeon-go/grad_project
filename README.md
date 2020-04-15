@@ -8,7 +8,7 @@
 ![image](https://user-images.githubusercontent.com/58035397/79320280-8b4ffc00-7f44-11ea-8cff-b91886a2363f.png)
 
 
-## 시현 캡처
+## 시 캡처
 
 ### 1. nate, naver, daum 중 하나를 선택하면 포털 사이트 연예 기사를 랭킹 5위까지 확인 가능
 <img width="600" alt="1" src="https://user-images.githubusercontent.com/58035397/79320723-39f43c80-7f45-11ea-8400-2fb9af41cbd0.PNG">
