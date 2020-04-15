@@ -1,4 +1,4 @@
-# grad_project
+# 졸업 작품 EUTOPIA
 
 ![image](https://user-images.githubusercontent.com/58035397/79320321-9e62cc00-7f44-11ea-8052-612b8898c0ff.png)
 
