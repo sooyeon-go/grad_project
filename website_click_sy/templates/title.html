@@ -7,24 +7,22 @@
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" media="screen" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jua">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum Gothic">
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
 <div id="title">
   <center>
   <div id="header">
-    <h1>
-	     <br>EUTOPIA</h1>
+    <h1><br>EUTOPIA</h1>
     <h2>화학과 1512136 고수연, 1613362 김영빈</h2>
   </div>
   <!--//end #headern//-->
   <blockquote>
     <p>기사 크롤링 > <b>본문</b> > 댓글 분석 > 결과</p>
   </blockquote>
-  <h2 style="text-align: left;">기사 제목:<br></h2>
-  <div>{{ title }}</div>
-  <br>
-  <p style="text-align: left;">기사 내용: <br></p>
-  <div>{{ content }}</div>
+  <div id='iframe'>
+    <iframe src="{{url}}">{{title}} 기사 전문</iframe>
+  </div>
   <br>
   <div id='button'>
     		<form action="/result">

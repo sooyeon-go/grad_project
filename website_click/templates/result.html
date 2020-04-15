@@ -11,7 +11,8 @@
 <body>
 <div id="title">
   <div id="header">
-    <h1><br>EUTOPIA</h1>
+    <h1>
+	      <br>EUTOPIA</h1>
     <h2>화학과 1512136 고수연, 1613362 김영빈</h2>
   </div>
   <center>
@@ -21,14 +22,15 @@
     <p>기사 크롤링 > 본문 > <b>댓글 분석</b> > 결과</p>
   </blockquote>
   </center>
-
-  <h2>Prediction:</h2>
+  <center>
+  <h2><b>Prediction</b></h2>
   <div>이 댓글창은
-        	<strong>{{ list2 }}</strong>% 긍정적입니다</div>
+        	<b>{{ list2 }}</b>% 긍정적입니다</div>
   <br>
-  <div>키워드는 <strong>{{ key1 }}</strong> 입니다</div>
+  <div>키워드는 <b>{{ key1 }}</b> 입니다</div>
+  </center>
   <br>
-  <h2>Clean 댓글:<br></h2>
+  <h2><b>선플 모음</b><br></h2>
   <ul>
       {% for i in list1 %}
       <li>{{i}}</li>
@@ -41,7 +43,15 @@
       {% endfor %}
   </ul>
   </span>
-
+  <br>
+  <span style = "color : green;">
+  <center>
+  <div> 댓글이 <b>전부 다 선플로</b> 이루어져 있다면 <b>댓글 훈련 시키기</b><br>
+        <b>중간에 악플<b/>이 섞여 있다면 <b>댓글 훈련시키지 않기</b><br>
+        버튼을 눌러주세요.
+  </div>
+  </center>
+  </span>
   <center>
   <br>
   <div id='button'>
