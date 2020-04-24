@@ -1,32 +1,29 @@
-# grad_project
-<1. 악플 골라내기>
-
-1.네이버 웹 크롤링(beautifulsoup 도구 이용하여 댓글 크롤링하기
-(선플 예시 : https://entertain.naver.com/ranking/read?oid=311&aid=0001096155, https://entertain.naver.com/ranking/read?oid=008&aid=0004335668,
-https://entertain.naver.com/ranking/read?oid=312&aid=0000429270
-악플 예시 : https://entertain.naver.com/ranking/read?oid=408&aid=0000084626,
-https://entertain.naver.com/ranking/read?oid=052&aid=0001384803,
-https://entertain.naver.com/ranking/read?oid=382&aid=0000788705)
-google cloud 감성 api 사용해서 걸러내기
-->악플 20000개, 선플 20000개씩 데이터 얻기
-->train : val : test(3-way holdout) = 6: 2: 2로 데이터 나누기
-
-2.텍스트 전처리 시작 
-토큰화 및 불용어 제거 : 형태소 분석기 통해서 중요 명사, 동사 추출하기(형태소 분석기로 Okt(Open Korea Text), 메캅(Mecab), 코모란(Komoran), 한나눔(Hannanum), 꼬꼬마(Kkma))
-
-3.기계가 데이터를 숫자로 처리하도록 정수 인코딩 수행
-
-4.LSTM 사용하여 감성 분류하기(epochs 및 activation funtion은 https://wikidocs.net/44249 참고)
+# 졸업 작품 EUTOPIA
 
 
+## 개요  
 
-<2. 선플 만들어내기>
 
-1.1-1에서 얻은 선플 샘플 데이터 이용하기
+![image](https://user-images.githubusercontent.com/58035397/79320321-9e62cc00-7f44-11ea-8052-612b8898c0ff.png)
+![image](https://user-images.githubusercontent.com/58035397/79320280-8b4ffc00-7f44-11ea-8cff-b91886a2363f.png)
 
-2.텍스트 전처리 시작 
-토큰화 및 불용어 제거 : 형태소 분석기 통해서 중요 명사, 동사 추출하기(형태소 분석기로 Okt(Open Korea Text), 메캅(Mecab), 코모란(Komoran), 한나눔(Hannanum), 꼬꼬마(Kkma))
 
-3.문맥을 살리기 위해서 word embedding matrix 구성
+## 시연 캡처
 
-4.rnn-language 모델 및 seqgan 이용하여 새로운 선플 문장 생성해내기
+### 1. nate, naver, daum 중 하나를 선택하면 포털 사이트 연예 기사를 랭킹 5위까지 확인 가능
+<img width="600" alt="1" src="https://user-images.githubusercontent.com/58035397/79320723-39f43c80-7f45-11ea-8400-2fb9af41cbd0.PNG">
+<img width="601" alt="2" src="https://user-images.githubusercontent.com/58035397/79321096-cf8fcc00-7f45-11ea-98fa-662d864bccf6.PNG">
+
+
+### 2. 보고싶은 기사를 클릭하고 선플 보기 버튼을 누르면 댓글 확인 가능
+<img width="601" alt="3" src="https://user-images.githubusercontent.com/58035397/79321104-d1f22600-7f45-11ea-9dfb-2448ec6ddee4.PNG">
+
+
+### 3. 댓글에 선플만 존재하지 않는다면 훈련하지 않기 버튼 클릭
+<img width="598" alt="4" src="https://user-images.githubusercontent.com/58035397/79321110-d3bbe980-7f45-11ea-913e-1edfbdca098c.PNG">
+<img width="600" alt="5" src="https://user-images.githubusercontent.com/58035397/79321116-d61e4380-7f45-11ea-95ea-a765e8d7694e.PNG">
+
+
+### 4. 댓글에 선플만 존재 한다면 훈련하기 버튼 클릭 후 모델 성능을 높이기
+<img width="600" alt="6" src="https://user-images.githubusercontent.com/58035397/79321122-d74f7080-7f45-11ea-832a-5099b66772db.PNG">
+<img width="600" alt="7" src="https://user-images.githubusercontent.com/58035397/79321131-dae2f780-7f45-11ea-8681-b4626dcaf0e9.PNG">
