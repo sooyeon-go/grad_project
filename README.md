@@ -6,7 +6,7 @@
 A website that allows you to see only good comments instead of bad comments
 ```
 
-+ Basic function of Web
++ How to use?
 
 ```
 1. If you select one of nate, naver, and daum, you can check the portal site entertainment article ranking up to 5th
