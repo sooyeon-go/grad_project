@@ -6,6 +6,14 @@
 A website that allows you to see only good comments instead of bad comments
 ```
 
++ Basic function of Web
+
+```
+1. If you select one of nate, naver, and daum, you can check the portal site entertainment article ranking up to 5th
+2. Click on the article you want to see and click the View button to view only good comments
+3. If there are malicious comments, click the "훈련하지 않기" button
+4. If there are only positive comments, increase the model performance after clicking the "훈련하기" button.
+```
 
 ![image](https://user-images.githubusercontent.com/58035397/79320321-9e62cc00-7f44-11ea-8052-612b8898c0ff.png)
 ![image](https://user-images.githubusercontent.com/58035397/79320280-8b4ffc00-7f44-11ea-8cff-b91886a2363f.png)
