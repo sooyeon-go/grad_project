@@ -2,9 +2,9 @@
 
 + What is EUTOPIA ?
 
-'''
+```
 A website that allows you to see only good comments instead of bad comments
-'''
+```
 
 
 ![image](https://user-images.githubusercontent.com/58035397/79320321-9e62cc00-7f44-11ea-8052-612b8898c0ff.png)
